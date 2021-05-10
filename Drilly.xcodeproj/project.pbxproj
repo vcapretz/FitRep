@@ -12,8 +12,8 @@
 		6348FCE0264905DC00B8A7E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCDF264905DC00B8A7E2 /* FirebaseAuth */; };
 		6348FCE2264905DC00B8A7E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE1264905DC00B8A7E2 /* FirebaseFirestore */; };
 		6348FCE4264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE3264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta */; };
-		638FCB4C26474195006193B2 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FCB4B26474195006193B2 /* RemindView.swift */; };
-		638FCB4D26474195006193B2 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FCB4B26474195006193B2 /* RemindView.swift */; };
+		63B63B8F2649621000F6446B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B63B8E2649621000F6446B /* UserService.swift */; };
+		63B63B902649621000F6446B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B63B8E2649621000F6446B /* UserService.swift */; };
 		63D2170826480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */; };
 		63D2170926480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */; };
 		63D2170B26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */; };
@@ -55,7 +55,7 @@
 
 /* Begin PBXFileReference section */
 		6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		638FCB4B26474195006193B2 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
+		63B63B8E2649621000F6446B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewProtocol.swift; sourceTree = "<group>"; };
 		63E5E8E52646C35F0039BCBE /* DrillyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillyApp.swift; sourceTree = "<group>"; };
@@ -113,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63B63B8D2649620300F6446B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63B63B8E2649621000F6446B /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		63D2170626480C27008E6022 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +145,7 @@
 		63E5E8E42646C35F0039BCBE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				63B63B8D2649620300F6446B /* Services */,
 				63D2170626480C27008E6022 /* ViewModels */,
 				63E5E8E52646C35F0039BCBE /* DrillyApp.swift */,
 				63E5E8E62646C35F0039BCBE /* LandingView.swift */,
@@ -145,7 +154,6 @@
 				63E5E9252646E4420039BCBE /* Color+Extension.swift */,
 				63E5E9282646EB7F0039BCBE /* CreateView.swift */,
 				63E5E92B2646EC0D0039BCBE /* DropdownView.swift */,
-				638FCB4B26474195006193B2 /* RemindView.swift */,
 				6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
@@ -366,10 +374,10 @@
 			files = (
 				63E5E9232646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9102646C3600039BCBE /* LandingView.swift in Sources */,
+				63B63B8F2649621000F6446B /* UserService.swift in Sources */,
 				63E5E90E2646C3600039BCBE /* DrillyApp.swift in Sources */,
 				63E5E9262646E4420039BCBE /* Color+Extension.swift in Sources */,
 				63D2170826480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */,
-				638FCB4C26474195006193B2 /* RemindView.swift in Sources */,
 				63E5E9292646EB7F0039BCBE /* CreateView.swift in Sources */,
 				63D2170B26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
 				63E5E92C2646EC0D0039BCBE /* DropdownView.swift in Sources */,
@@ -382,10 +390,10 @@
 			files = (
 				63E5E9242646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9112646C3600039BCBE /* LandingView.swift in Sources */,
+				63B63B902649621000F6446B /* UserService.swift in Sources */,
 				63E5E90F2646C3600039BCBE /* DrillyApp.swift in Sources */,
 				63E5E9272646E4420039BCBE /* Color+Extension.swift in Sources */,
 				63D2170926480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */,
-				638FCB4D26474195006193B2 /* RemindView.swift in Sources */,
 				63E5E92A2646EB7F0039BCBE /* CreateView.swift in Sources */,
 				63D2170C26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
 				63E5E92D2646EC0D0039BCBE /* DropdownView.swift in Sources */,

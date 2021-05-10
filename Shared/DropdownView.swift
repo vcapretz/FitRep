@@ -11,43 +11,35 @@ struct DropdownView<T: DropdownItemProtocol>: View {
     @Binding var viewModel: T
     
     var body: some View {
-        VStack(spacing: 10) {
+        Button(action: {
+            viewModel.isSelected = true
+        }) {
             HStack {
-                Text(viewModel.headerTitle)
-                    .font(.system(size: 22, weight: .semibold))
-                    .foregroundColor(.secondary)
+                Text(viewModel.dropdownTitle)
                 
                 Spacer()
+                
+                Image(systemName: "arrowtriangle.down.circle")
+                    .font(.title2.weight(.medium))
             }
-            
-            Button(action: {
-                viewModel.isSelected = true
-            }) {
-                HStack {
-                    Text(viewModel.dropdownTitle)
-                    Spacer()
-                    
-                    Image(systemName: "arrowtriangle.down.circle")
-                        .font(.system(size: 24, weight: .medium))
-                }
-                .font(.title)
-            }
-            .buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
+            .font(.title2)
         }
-        .padding(.horizontal)
+        .buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
     }
 }
 
-//struct DropdownView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView {
-//            DropdownView()
-//        }.environment(\.colorScheme, .dark)
-//
-//        NavigationView {
-//            DropdownView()
-//        }
-//        .environment(\.colorScheme, .light)
-//    }
-//}
+struct DropdownView_Previews: PreviewProvider {
+    @State static var viewModel = CreateChallengeViewModel()
+    
+    static var previews: some View {
+        NavigationView {
+            DropdownView(viewModel: $viewModel.dropdowns[0])
+        }.environment(\.colorScheme, .dark)
+        
+        NavigationView {
+            DropdownView(viewModel: $viewModel.dropdowns[0])
+        }
+        .environment(\.colorScheme, .light)
+    }
+}
 
