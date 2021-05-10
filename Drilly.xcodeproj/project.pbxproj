@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6348FCDC2649051500B8A7E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */; };
+		6348FCDD2649051500B8A7E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */; };
+		6348FCE0264905DC00B8A7E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCDF264905DC00B8A7E2 /* FirebaseAuth */; };
+		6348FCE2264905DC00B8A7E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE1264905DC00B8A7E2 /* FirebaseFirestore */; };
+		6348FCE4264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE3264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta */; };
+		638FCB4C26474195006193B2 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FCB4B26474195006193B2 /* RemindView.swift */; };
+		638FCB4D26474195006193B2 /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638FCB4B26474195006193B2 /* RemindView.swift */; };
+		63D2170826480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */; };
+		63D2170926480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */; };
+		63D2170B26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */; };
+		63D2170C26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */; };
 		63E5E9012646C3600039BCBE /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9002646C3600039BCBE /* Tests_iOS.swift */; };
 		63E5E90C2646C3600039BCBE /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E90B2646C3600039BCBE /* Tests_macOS.swift */; };
 		63E5E90E2646C3600039BCBE /* DrillyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E52646C35F0039BCBE /* DrillyApp.swift */; };
 		63E5E90F2646C3600039BCBE /* DrillyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E52646C35F0039BCBE /* DrillyApp.swift */; };
-		63E5E9102646C3600039BCBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E62646C35F0039BCBE /* ContentView.swift */; };
-		63E5E9112646C3600039BCBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E62646C35F0039BCBE /* ContentView.swift */; };
+		63E5E9102646C3600039BCBE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E62646C35F0039BCBE /* LandingView.swift */; };
+		63E5E9112646C3600039BCBE /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E8E62646C35F0039BCBE /* LandingView.swift */; };
 		63E5E9122646C3600039BCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5E8E72646C35F0039BCBE /* Assets.xcassets */; };
 		63E5E9132646C3600039BCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5E8E72646C35F0039BCBE /* Assets.xcassets */; };
+		63E5E9232646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */; };
+		63E5E9242646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */; };
+		63E5E9262646E4420039BCBE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9252646E4420039BCBE /* Color+Extension.swift */; };
+		63E5E9272646E4420039BCBE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9252646E4420039BCBE /* Color+Extension.swift */; };
+		63E5E9292646EB7F0039BCBE /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9282646EB7F0039BCBE /* CreateView.swift */; };
+		63E5E92A2646EB7F0039BCBE /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9282646EB7F0039BCBE /* CreateView.swift */; };
+		63E5E92C2646EC0D0039BCBE /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E92B2646EC0D0039BCBE /* DropdownView.swift */; };
+		63E5E92D2646EC0D0039BCBE /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E92B2646EC0D0039BCBE /* DropdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		638FCB4B26474195006193B2 /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
+		63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
+		63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownViewProtocol.swift; sourceTree = "<group>"; };
 		63E5E8E52646C35F0039BCBE /* DrillyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillyApp.swift; sourceTree = "<group>"; };
-		63E5E8E62646C35F0039BCBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63E5E8E62646C35F0039BCBE /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		63E5E8E72646C35F0039BCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E5E8EC2646C35F0039BCBE /* Drilly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drilly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5E8EF2646C35F0039BCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +72,10 @@
 		63E5E9072646C3600039BCBE /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5E90B2646C3600039BCBE /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		63E5E90D2646C3600039BCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		63E5E9252646E4420039BCBE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		63E5E9282646EB7F0039BCBE /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		63E5E92B2646EC0D0039BCBE /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6348FCE4264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				6348FCE0264905DC00B8A7E2 /* FirebaseAuth in Frameworks */,
+				6348FCE2264905DC00B8A7E2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63D2170626480C27008E6022 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				63D2170726480C3E008E6022 /* CreateChallengeViewModel.swift */,
+				63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		63E5E8DF2646C35F0039BCBE = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +137,16 @@
 		63E5E8E42646C35F0039BCBE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				63D2170626480C27008E6022 /* ViewModels */,
 				63E5E8E52646C35F0039BCBE /* DrillyApp.swift */,
-				63E5E8E62646C35F0039BCBE /* ContentView.swift */,
+				63E5E8E62646C35F0039BCBE /* LandingView.swift */,
 				63E5E8E72646C35F0039BCBE /* Assets.xcassets */,
+				63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */,
+				63E5E9252646E4420039BCBE /* Color+Extension.swift */,
+				63E5E9282646EB7F0039BCBE /* CreateView.swift */,
+				63E5E92B2646EC0D0039BCBE /* DropdownView.swift */,
+				638FCB4B26474195006193B2 /* RemindView.swift */,
+				6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -167,6 +213,11 @@
 			dependencies = (
 			);
 			name = "Drilly (iOS)";
+			packageProductDependencies = (
+				6348FCDF264905DC00B8A7E2 /* FirebaseAuth */,
+				6348FCE1264905DC00B8A7E2 /* FirebaseFirestore */,
+				6348FCE3264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = "Drilly (iOS)";
 			productReference = 63E5E8EC2646C35F0039BCBE /* Drilly.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +309,9 @@
 				Base,
 			);
 			mainGroup = 63E5E8DF2646C35F0039BCBE;
+			packageReferences = (
+				6348FCDE264905DC00B8A7E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 63E5E8ED2646C35F0039BCBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E5E9122646C3600039BCBE /* Assets.xcassets in Resources */,
+				6348FCDC2649051500B8A7E2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E5E9132646C3600039BCBE /* Assets.xcassets in Resources */,
+				6348FCDD2649051500B8A7E2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +364,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E5E9102646C3600039BCBE /* ContentView.swift in Sources */,
+				63E5E9232646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
+				63E5E9102646C3600039BCBE /* LandingView.swift in Sources */,
 				63E5E90E2646C3600039BCBE /* DrillyApp.swift in Sources */,
+				63E5E9262646E4420039BCBE /* Color+Extension.swift in Sources */,
+				63D2170826480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */,
+				638FCB4C26474195006193B2 /* RemindView.swift in Sources */,
+				63E5E9292646EB7F0039BCBE /* CreateView.swift in Sources */,
+				63D2170B26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
+				63E5E92C2646EC0D0039BCBE /* DropdownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +380,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E5E9112646C3600039BCBE /* ContentView.swift in Sources */,
+				63E5E9242646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
+				63E5E9112646C3600039BCBE /* LandingView.swift in Sources */,
 				63E5E90F2646C3600039BCBE /* DrillyApp.swift in Sources */,
+				63E5E9272646E4420039BCBE /* Color+Extension.swift in Sources */,
+				63D2170926480C3E008E6022 /* CreateChallengeViewModel.swift in Sources */,
+				638FCB4D26474195006193B2 /* RemindView.swift in Sources */,
+				63E5E92A2646EB7F0039BCBE /* CreateView.swift in Sources */,
+				63D2170C26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
+				63E5E92D2646EC0D0039BCBE /* DropdownView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +549,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcapretz.Drilly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcapretz.FitReps;
 				PRODUCT_NAME = Drilly;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -501,7 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vcapretz.Drilly;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcapretz.FitReps;
 				PRODUCT_NAME = Drilly;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -696,6 +766,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6348FCDE264905DC00B8A7E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6348FCDF264905DC00B8A7E2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6348FCDE264905DC00B8A7E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6348FCE1264905DC00B8A7E2 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6348FCDE264905DC00B8A7E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6348FCE3264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6348FCDE264905DC00B8A7E2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63E5E8E02646C35F0039BCBE /* Project object */;
 }
