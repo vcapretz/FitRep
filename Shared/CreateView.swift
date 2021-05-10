@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct CreateView: View {
-    @StateObject var viewModel = CreateChallengeViewModel()
+    @StateObject var viewModel = CreateWorkoutViewModel()
+    @State private var isAdding = false
     
     var dropdownList: some View {
-        ForEach(viewModel.dropdowns.indices, id: \.self) { index in
-            DropdownView(viewModel: $viewModel.dropdowns[index])
+        ForEach(viewModel.exercises.indices, id: \.self) { index in
+            DropdownView(viewModel: $viewModel.exercises[index])
         }
         .onMove(perform: { indices, newOffset in
             viewModel.send(action: .moveExercise(from: indices, to: newOffset))
@@ -22,29 +23,13 @@ struct CreateView: View {
         })
     }
     
-    var actionSheet: ActionSheet {
-        ActionSheet(
-            title: Text("Select"),
-            buttons: viewModel.displayedOptions.indices.map({ index in
-                let option = viewModel.displayedOptions[index]
-                
-                return .default(Text(option.formatted)) {
-                    viewModel.send(action: .selectOption(index: index))
-                }
-            })
-        )
-    }
-    
-    var body: some View {
+    var mainContentView: some View {
         VStack(alignment: .leading) {
-            Text("Start by adding a few exercises")
-                .padding(.leading, 20)
-            
             List {
                 dropdownList
             }
             .listStyle(PlainListStyle())
-        
+            
             Button(action: {
                 viewModel.send(action: .createWorkout)
             }, label: {
@@ -60,23 +45,30 @@ struct CreateView: View {
             })
             .accentColor(.primary)
             .padding(.bottom)
-            .disabled(viewModel.dropdowns.count < 1)
+            .disabled(viewModel.exercises.count < 1)
         }
-        .actionSheet(isPresented: Binding<Bool>(
-                        get: {
-                            viewModel.hasSelectedDropdown
-                        },
-                        set: { _ in })
-        ) {
-            actionSheet
+    }
+    
+    var body: some View {
+        ZStack {
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                mainContentView
+            }
         }
-        .navigationBarTitle(Text("New workout"))
+        .alert(isPresented: Binding<Bool>.constant($viewModel.error.wrappedValue != nil)) {
+            Alert(title: Text("Error"), message: Text($viewModel.error.wrappedValue?.localizedDescription ?? ""), dismissButton: .default(Text("Ok"), action: {
+                viewModel.error = nil
+            }))
+        }
+        .sheet(isPresented: $isAdding, content: {
+            SelectWorkoutsView()
+                .environmentObject(viewModel)
+        })
+        .navigationBarTitle(Text("Workout template"))
         .navigationBarItems(leading: EditButton().accentColor(.primary), trailing: Button(action: {
-            viewModel.dropdowns.append(.init(type: .exercise))
-            
-            guard let lastDropdown = viewModel.dropdowns.indices.last else { return }
-            viewModel.dropdowns[lastDropdown].isSelected = true
-            
+            isAdding = true
         }, label: {
             Text("Add")
         }).accentColor(.primary))

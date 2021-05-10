@@ -11,33 +11,28 @@ struct DropdownView<T: DropdownItemProtocol>: View {
     @Binding var viewModel: T
     
     var body: some View {
-        Button(action: {
-            viewModel.isSelected = true
-        }) {
+        Button(action: { }) {
             HStack {
                 Text(viewModel.dropdownTitle)
+                    .font(.title2)
                 
                 Spacer()
-                
-                Image(systemName: "arrowtriangle.down.circle")
-                    .font(.title2.weight(.medium))
             }
-            .font(.title2)
         }
         .buttonStyle(PrimaryButtonStyle(fillColor: .primaryButton))
     }
 }
 
 struct DropdownView_Previews: PreviewProvider {
-    @State static var viewModel = CreateChallengeViewModel()
+    @State static var viewModel = CreateWorkoutViewModel()
     
     static var previews: some View {
         NavigationView {
-            DropdownView(viewModel: $viewModel.dropdowns[0])
+            DropdownView(viewModel: $viewModel.exercises[0])
         }.environment(\.colorScheme, .dark)
         
         NavigationView {
-            DropdownView(viewModel: $viewModel.dropdowns[0])
+            DropdownView(viewModel: $viewModel.exercises[0])
         }
         .environment(\.colorScheme, .light)
     }
