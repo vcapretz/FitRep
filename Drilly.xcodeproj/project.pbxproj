@@ -12,6 +12,8 @@
 		6348FCE0264905DC00B8A7E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCDF264905DC00B8A7E2 /* FirebaseAuth */; };
 		6348FCE2264905DC00B8A7E2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE1264905DC00B8A7E2 /* FirebaseFirestore */; };
 		6348FCE4264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCE3264905DC00B8A7E2 /* FirebaseFirestoreSwift-Beta */; };
+		63962A85264AA464009BF196 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63962A84264AA464009BF196 /* AuthPublisher.swift */; };
+		63962A86264AA464009BF196 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63962A84264AA464009BF196 /* AuthPublisher.swift */; };
 		63B63B8F2649621000F6446B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B63B8E2649621000F6446B /* UserService.swift */; };
 		63B63B902649621000F6446B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B63B8E2649621000F6446B /* UserService.swift */; };
 		63B63B922649792E00F6446B /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B63B912649792E00F6446B /* SearchBar.swift */; };
@@ -65,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63962A84264AA464009BF196 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		63B63B8E2649621000F6446B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		63B63B912649792E00F6446B /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		63B63B942649798F00F6446B /* SelectWorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkoutsView.swift; sourceTree = "<group>"; };
@@ -128,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63962A83264AA456009BF196 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				63962A84264AA464009BF196 /* AuthPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
 		63B63B8D2649620300F6446B /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +180,7 @@
 		63E5E8E42646C35F0039BCBE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				63962A83264AA456009BF196 /* Publishers */,
 				63B63B972649C26000F6446B /* Models */,
 				63B63B8D2649620300F6446B /* Services */,
 				63D2170626480C27008E6022 /* ViewModels */,
@@ -401,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B63B9F2649CA5000F6446B /* FitRepError.swift in Sources */,
+				63962A85264AA464009BF196 /* AuthPublisher.swift in Sources */,
 				63E5E9232646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9102646C3600039BCBE /* LandingView.swift in Sources */,
 				63B63B952649798F00F6446B /* SelectWorkoutsView.swift in Sources */,
@@ -422,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B63BA02649CA5000F6446B /* FitRepError.swift in Sources */,
+				63962A86264AA464009BF196 /* AuthPublisher.swift in Sources */,
 				63E5E9242646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9112646C3600039BCBE /* LandingView.swift in Sources */,
 				63B63B962649798F00F6446B /* SelectWorkoutsView.swift in Sources */,
