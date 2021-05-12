@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6346461D264AB07500C0B475 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346461C264AB07500C0B475 /* TabContainerView.swift */; };
+		6346461E264AB07500C0B475 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346461C264AB07500C0B475 /* TabContainerView.swift */; };
+		63464620264AB64400C0B475 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346461F264AB64400C0B475 /* WorkoutListView.swift */; };
+		63464621264AB64400C0B475 /* WorkoutListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346461F264AB64400C0B475 /* WorkoutListView.swift */; };
+		63464623264AB66400C0B475 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464622264AB66400C0B475 /* WorkoutListViewModel.swift */; };
+		63464624264AB66400C0B475 /* WorkoutListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464622264AB66400C0B475 /* WorkoutListViewModel.swift */; };
+		63464626264AB72500C0B475 /* QuerySnapshotPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464625264AB72500C0B475 /* QuerySnapshotPublisher.swift */; };
+		63464627264AB72500C0B475 /* QuerySnapshotPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464625264AB72500C0B475 /* QuerySnapshotPublisher.swift */; };
+		63464629264ABFF600C0B475 /* TemplateItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464628264ABFF600C0B475 /* TemplateItemViewModel.swift */; };
+		6346462A264ABFF600C0B475 /* TemplateItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63464628264ABFF600C0B475 /* TemplateItemViewModel.swift */; };
 		6348FCDC2649051500B8A7E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */; };
 		6348FCDD2649051500B8A7E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */; };
 		6348FCE0264905DC00B8A7E2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6348FCDF264905DC00B8A7E2 /* FirebaseAuth */; };
@@ -44,8 +54,6 @@
 		63E5E9272646E4420039BCBE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9252646E4420039BCBE /* Color+Extension.swift */; };
 		63E5E9292646EB7F0039BCBE /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9282646EB7F0039BCBE /* CreateView.swift */; };
 		63E5E92A2646EB7F0039BCBE /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E9282646EB7F0039BCBE /* CreateView.swift */; };
-		63E5E92C2646EC0D0039BCBE /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E92B2646EC0D0039BCBE /* DropdownView.swift */; };
-		63E5E92D2646EC0D0039BCBE /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5E92B2646EC0D0039BCBE /* DropdownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6346461C264AB07500C0B475 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		6346461F264AB64400C0B475 /* WorkoutListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListView.swift; sourceTree = "<group>"; };
+		63464622264AB66400C0B475 /* WorkoutListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutListViewModel.swift; sourceTree = "<group>"; };
+		63464625264AB72500C0B475 /* QuerySnapshotPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuerySnapshotPublisher.swift; sourceTree = "<group>"; };
+		63464628264ABFF600C0B475 /* TemplateItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateItemViewModel.swift; sourceTree = "<group>"; };
 		6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		63962A84264AA464009BF196 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		63B63B8E2649621000F6446B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -93,7 +106,6 @@
 		63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		63E5E9252646E4420039BCBE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		63E5E9282646EB7F0039BCBE /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
-		63E5E92B2646EC0D0039BCBE /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +147,21 @@
 			isa = PBXGroup;
 			children = (
 				63962A84264AA464009BF196 /* AuthPublisher.swift */,
+				63464625264AB72500C0B475 /* QuerySnapshotPublisher.swift */,
 			);
 			path = Publishers;
+			sourceTree = "<group>";
+		};
+		639FCBC0264C1DBA003ADEFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63E5E8E62646C35F0039BCBE /* LandingView.swift */,
+				63E5E9282646EB7F0039BCBE /* CreateView.swift */,
+				63B63B942649798F00F6446B /* SelectWorkoutsView.swift */,
+				6346461C264AB07500C0B475 /* TabContainerView.swift */,
+				6346461F264AB64400C0B475 /* WorkoutListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		63B63B8D2649620300F6446B /* Services */ = {
@@ -161,6 +186,8 @@
 			children = (
 				63D2170726480C3E008E6022 /* CreateWorkoutViewModel.swift */,
 				63D2170A26480CB4008E6022 /* DropdownViewProtocol.swift */,
+				63464622264AB66400C0B475 /* WorkoutListViewModel.swift */,
+				63464628264ABFF600C0B475 /* TemplateItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -180,20 +207,17 @@
 		63E5E8E42646C35F0039BCBE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				639FCBC0264C1DBA003ADEFC /* Views */,
 				63962A83264AA456009BF196 /* Publishers */,
 				63B63B972649C26000F6446B /* Models */,
 				63B63B8D2649620300F6446B /* Services */,
 				63D2170626480C27008E6022 /* ViewModels */,
 				63E5E8E52646C35F0039BCBE /* DrillyApp.swift */,
-				63E5E8E62646C35F0039BCBE /* LandingView.swift */,
 				63E5E8E72646C35F0039BCBE /* Assets.xcassets */,
 				63E5E9222646E3410039BCBE /* PrimaryButtonStyle.swift */,
 				63E5E9252646E4420039BCBE /* Color+Extension.swift */,
-				63E5E9282646EB7F0039BCBE /* CreateView.swift */,
-				63E5E92B2646EC0D0039BCBE /* DropdownView.swift */,
 				6348FCDB2649051500B8A7E2 /* GoogleService-Info.plist */,
 				63B63B912649792E00F6446B /* SearchBar.swift */,
-				63B63B942649798F00F6446B /* SelectWorkoutsView.swift */,
 				63B63B9E2649CA5000F6446B /* FitRepError.swift */,
 			);
 			path = Shared;
@@ -413,19 +437,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B63B9F2649CA5000F6446B /* FitRepError.swift in Sources */,
+				63464629264ABFF600C0B475 /* TemplateItemViewModel.swift in Sources */,
 				63962A85264AA464009BF196 /* AuthPublisher.swift in Sources */,
 				63E5E9232646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9102646C3600039BCBE /* LandingView.swift in Sources */,
 				63B63B952649798F00F6446B /* SelectWorkoutsView.swift in Sources */,
 				63B63B8F2649621000F6446B /* UserService.swift in Sources */,
+				6346461D264AB07500C0B475 /* TabContainerView.swift in Sources */,
 				63E5E90E2646C3600039BCBE /* DrillyApp.swift in Sources */,
+				63464623264AB66400C0B475 /* WorkoutListViewModel.swift in Sources */,
 				63E5E9262646E4420039BCBE /* Color+Extension.swift in Sources */,
 				63B63B9C2649C5D900F6446B /* WorkoutService.swift in Sources */,
+				63464626264AB72500C0B475 /* QuerySnapshotPublisher.swift in Sources */,
 				63D2170826480C3E008E6022 /* CreateWorkoutViewModel.swift in Sources */,
 				63E5E9292646EB7F0039BCBE /* CreateView.swift in Sources */,
 				63B63B922649792E00F6446B /* SearchBar.swift in Sources */,
+				63464620264AB64400C0B475 /* WorkoutListView.swift in Sources */,
 				63D2170B26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
-				63E5E92C2646EC0D0039BCBE /* DropdownView.swift in Sources */,
 				63B63B992649C26900F6446B /* WorkoutTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,19 +463,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B63BA02649CA5000F6446B /* FitRepError.swift in Sources */,
+				6346462A264ABFF600C0B475 /* TemplateItemViewModel.swift in Sources */,
 				63962A86264AA464009BF196 /* AuthPublisher.swift in Sources */,
 				63E5E9242646E3410039BCBE /* PrimaryButtonStyle.swift in Sources */,
 				63E5E9112646C3600039BCBE /* LandingView.swift in Sources */,
 				63B63B962649798F00F6446B /* SelectWorkoutsView.swift in Sources */,
 				63B63B902649621000F6446B /* UserService.swift in Sources */,
+				6346461E264AB07500C0B475 /* TabContainerView.swift in Sources */,
 				63E5E90F2646C3600039BCBE /* DrillyApp.swift in Sources */,
+				63464624264AB66400C0B475 /* WorkoutListViewModel.swift in Sources */,
 				63E5E9272646E4420039BCBE /* Color+Extension.swift in Sources */,
 				63B63B9D2649C5D900F6446B /* WorkoutService.swift in Sources */,
+				63464627264AB72500C0B475 /* QuerySnapshotPublisher.swift in Sources */,
 				63D2170926480C3E008E6022 /* CreateWorkoutViewModel.swift in Sources */,
 				63E5E92A2646EB7F0039BCBE /* CreateView.swift in Sources */,
 				63B63B932649792E00F6446B /* SearchBar.swift in Sources */,
+				63464621264AB64400C0B475 /* WorkoutListView.swift in Sources */,
 				63D2170C26480CB4008E6022 /* DropdownViewProtocol.swift in Sources */,
-				63E5E92D2646EC0D0039BCBE /* DropdownView.swift in Sources */,
 				63B63B9A2649C26900F6446B /* WorkoutTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct WorkoutTemplate: Codable {
+struct WorkoutTemplate: Codable, Hashable {
+    let name: String
     let exercises: [Exercise]
     let userId: String
+    let createdAt: Date
 }

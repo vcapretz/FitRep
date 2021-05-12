@@ -12,6 +12,7 @@ protocol UserServiceProtocol {
     func currentUser() -> AnyPublisher<User?, Never>
     func signInAnonymously() -> AnyPublisher<User, FitRepError>
     func observeAuthChanges() -> AnyPublisher<User?, Never>
+    func logout()
 }
 
 final class UserService: UserServiceProtocol {
@@ -36,5 +37,9 @@ final class UserService: UserServiceProtocol {
     
     func observeAuthChanges() -> AnyPublisher<User?, Never> {
         Publishers.AuthPublisher().eraseToAnyPublisher()
+    }
+    
+    func logout() {
+        try? Auth.auth().signOut()
     }
 }

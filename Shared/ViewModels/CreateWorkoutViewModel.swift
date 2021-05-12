@@ -17,6 +17,7 @@ final class CreateWorkoutViewModel: ObservableObject {
         .init(),
     ]
     
+    @Published var newWorkoutRoutine: String = ""
     @Published var error: FitRepError?
     @Published var isLoading: Bool = false
     
@@ -63,7 +64,7 @@ final class CreateWorkoutViewModel: ObservableObject {
                         break
                     }
                 } receiveValue: { _ in
-                    print("created new template")
+                    print("created new routine")
                 }
                 .store(in: &cancellables)
         }
@@ -75,9 +76,13 @@ final class CreateWorkoutViewModel: ObservableObject {
                 .eraseToAnyPublisher()
         }
         
+        let routineName = newWorkoutRoutine.isEmpty ? "New routine" : newWorkoutRoutine
+        
         let template = WorkoutTemplate(
+            name: routineName,
             exercises: exercises.map { $0.selectedOption },
-            userId: userId
+            userId: userId,
+            createdAt: Date()
         )
         
         return workoutService

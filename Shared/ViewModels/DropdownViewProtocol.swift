@@ -12,6 +12,6 @@ protocol DropdownItemProtocol {
     var selectedOption: Exercise { get set }
 }
 
-struct Exercise: Codable {
+struct Exercise: Codable, Hashable {
     let name: String
 }

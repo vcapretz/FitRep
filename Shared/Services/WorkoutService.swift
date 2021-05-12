@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 protocol WorkoutServiceProtocol {
     func createTemplate(_ template: WorkoutTemplate) -> AnyPublisher<Void, FitRepError>
+    func observeTemplates(userId: UserId) -> AnyPublisher<[WorkoutTemplate], FitRepError>
 }
 
 final class WorkoutService: WorkoutServiceProtocol {
@@ -31,5 +32,26 @@ final class WorkoutService: WorkoutServiceProtocol {
             }
         }
         .eraseToAnyPublisher()
+    }
+    
+    func observeTemplates(userId: UserId) -> AnyPublisher<[WorkoutTemplate], FitRepError> {
+        let query = db.collection("templates").whereField("userId", isEqualTo: userId)
+        
+        return Publishers.QuerySnapshotPublisher(query: query)
+            .flatMap { snapshot -> AnyPublisher<[WorkoutTemplate], FitRepError> in
+                do {
+                    let templates = try snapshot.documents.compactMap {
+                        try $0.data(as: WorkoutTemplate.self)
+                    }
+                    
+                    return Just(templates)
+                        .setFailureType(to: FitRepError.self)
+                        .eraseToAnyPublisher()
+                } catch {
+                    return Fail(error: .default(description: "Parsing error"))
+                        .eraseToAnyPublisher()
+                }
+            }
+            .eraseToAnyPublisher()
     }
 }

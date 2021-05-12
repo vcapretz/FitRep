@@ -20,13 +20,7 @@ struct DrillyApp: App {
     var body: some Scene {
         WindowGroup {
             if appState.isLoggedIn {
-                TabView {
-                    Text("logged in")
-                        .tabItem {
-                            Image(systemName: "book")
-                        }
-                }
-                .accentColor(.primary)
+                TabContainerView()
             } else {
                 LandingView()
             }
